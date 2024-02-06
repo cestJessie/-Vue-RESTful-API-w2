@@ -15,8 +15,7 @@ const app = Vue.createApp({
         alert("請輸入信箱及密碼!");
         return;
       } else {
-        axios
-          .post(`${this.apiUrl}/admin/signin`, this.user)
+        axios.post(`${this.apiUrl}/admin/signin`, this.user)
           .then(res => {
             // 將 token 和 unix timestamp 存起來
             const { token, expired } = res.data;

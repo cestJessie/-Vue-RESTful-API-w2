@@ -6,7 +6,6 @@ const app = Vue.createApp({
       apiPath: 'cj-project',
       products: [],
       tempProduct: {},
-      isShow: false
     }
   },
   methods: {
